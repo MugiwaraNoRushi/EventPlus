@@ -10,7 +10,7 @@ import random
 from django.views.decorators.csrf import csrf_exempt
 import numpy as np
 from APIs.main import *
-eventAPIs = EventAPIs()
+eventAPIs = EventAPIs(negation_detection=True)
 
 def index(request):
     return render(request, 'index.html')
@@ -183,6 +183,30 @@ def json_generator(result):
                     "color": color_dict[event_count],
                     "type": trigger["event_type"]
                 })
+            if "speculation" in event:
+                print("******************it does contain speculation ****************************************")
+                result_array[-1]['speculation'] = 'True'
+                temp_neg_cue = result['negation_cue']
+                temp_neg_scope = result['negation_scope']
+                result_array[-1]['speculation_cue'] = -1
+                for i in range(trigger['end_token'],0,-1):
+                    if temp_neg_cue[i] == 1:
+                        result_array[-1]['speculation_cue'] = i
+                        break
+                result_array[-1]['speculation_scope'] = []
+                flag = False
+                for i in range(result_array[-1]['speculation_cue'], len(result['tokens'])):
+                    if temp_neg_scope[i] == 1:
+                        result_array[-1]['speculation_scope'].append(i)
+                        flag = True
+                    elif flag == True:
+                        break
+
+                print(trigger['end_token'] + 1)
+
+
+
+
 
             if "arguments" in event:
                 arguments = event["arguments"]
@@ -195,6 +219,8 @@ def json_generator(result):
                         "event": event_count,
                         "color": color_dict[event_count]
                     })
+
+
 
             event_count += 1
 
@@ -231,22 +257,35 @@ def json_generator(result):
                     "target": item[1],
                     "type": item[2]
                 })
+    neg_cue = []
+    neg_scope = []
+    if 1 in result['negation_cue']:
+        for i in range(len(result['negation_cue'])):
+            if result['negation_cue'][i] == 1:
+                neg_cue.append(i)
+    if 1 in result['negation_scope']:
+        for i in range(len(result['negation_scope'])):
+            if result['negation_scope'][i] == 1:
+                neg_scope.append(i)
 
     return_dict = {
         "tokens": result["tokens"],
         "labels": result_array,
-        "graph": graph
+        "graph": graph,
+        "neg_cue":neg_cue,
+        "neg_scope":neg_scope
     }
-
+    # print("*"*20,result_array)
     return return_dict
 
 @csrf_exempt
 def analyze_text(request):
     # Extract params
     parameters = request.POST
-    print('views.analyze_text: ', parameters['text'])
+    # print('views.analyze_text: ', parameters['text'])
     result = eventAPIs.analyze(parameters)
     print ('views.analyze_text: Start generating json by json_generator')
+    print(result)
     sample_json = json_generator(result)
     print('views.analyze_text: ', sample_json)
     return JsonResponse(sample_json)

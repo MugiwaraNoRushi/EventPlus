@@ -4,7 +4,8 @@ project/static
 project/tmp
 project/bert*
 project/xlnet*
-
+component/BETTER/joint/worked_model_ace/*
+component/Extract_emotions/models/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

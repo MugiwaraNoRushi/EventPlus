@@ -1,0 +1,3464 @@
+{
+    "error_list": [],
+    "result_list": [
+        {
+            "date": "2021-05-25T00:04:02",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Rwanda",
+                        "?"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            0,
+                            0,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0
+                    ],
+                    "line_num": 0,
+                    "sen_num": 0,
+                    "sentence": "Rwanda?"
+                },
+                {
+                    "tokens": [
+                        "France",
+                        "entering",
+                        "through",
+                        "the",
+                        "back",
+                        "door",
+                        "then"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            0,
+                            0,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 0,
+                    "sen_num": 1,
+                    "sentence": "France entering through the back door then",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.008229648686824215,
+                        "fairness.virtue": 0.011661768835768294,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.020200375829620112,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.010341895950924664,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.013913709307645346,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.012487140276399595
+                    },
+                    "concreteness": {
+                        "bias_concreteness": 0.05307853668928146,
+                        "intensity_concreteness": 0.008498899230193096,
+                        "concreteness.vice": 0,
+                        "concreteness.virtue": 0.008498899230193096
+                    }
+                }
+            ],
+            "telegram_id": 31147
+        },
+        {
+            "date": "2021-05-25T00:05:16",
+            "text_results": [
+                {
+                    "tokens": [
+                        "A",
+                        "good",
+                        "decision",
+                        "for",
+                        "all",
+                        ":",
+                        "France",
+                        "is",
+                        "in",
+                        "control",
+                        "of",
+                        "the",
+                        "forces",
+                        ",",
+                        "and",
+                        "Frelimo",
+                        "does",
+                        "not",
+                        "lose",
+                        "face",
+                        "because",
+                        "it",
+                        "can",
+                        "claim",
+                        "they",
+                        "are",
+                        "Africans",
+                        "."
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            6,
+                            6,
+                            "GPE"
+                        ],
+                        [
+                            12,
+                            12,
+                            "PER"
+                        ],
+                        [
+                            15,
+                            15,
+                            "GPE"
+                        ],
+                        [
+                            26,
+                            26,
+                            "PER"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "line_num": 1,
+                    "sen_num": 0,
+                    "sentence": "A good decision for all: France is in control of the forces, and Frelimo does not lose face because it can claim they are Africans.",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.017488591915846174,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.0183949528325958,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.018261971922874654,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.014982310363866398,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.007112543315880684,
+                        "purity.vice": 0.01110914804792417,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.05751613403360049,
+                        "intensity_concreteness": 0.006544990742804225,
+                        "concreteness.vice": 0.006544990742804225,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "Master",
+                        "play"
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        1
+                    ],
+                    "line_num": 1,
+                    "sen_num": 1,
+                    "sentence": "Master play"
+                }
+            ],
+            "telegram_id": 31148
+        },
+        {
+            "date": "2021-05-25T02:09:03",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Yes",
+                        "."
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        1
+                    ],
+                    "line_num": 2,
+                    "sen_num": 0,
+                    "sentence": "Yes."
+                },
+                {
+                    "tokens": [
+                        "But",
+                        "it",
+                        "will",
+                        "be",
+                        "a",
+                        "thing",
+                        "that",
+                        "doesn&#39;t",
+                        "go",
+                        "far",
+                        "...",
+                        "Don&#39;t",
+                        "soldiers",
+                        "from",
+                        "Rwanda",
+                        "usually",
+                        "go",
+                        "to",
+                        "Congo",
+                        "to",
+                        "steal",
+                        "stones",
+                        "for",
+                        "Rwanda",
+                        "anyway",
+                        "?"
+                    ],
+                    "events": [
+                        {
+                            "event_type": "Movement:Transport",
+                            "triggers": [
+                                {
+                                    "event_type": "Movement:Transport",
+                                    "text": "go",
+                                    "start_token": 16,
+                                    "end_token": 16
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "role": "Artifact",
+                                    "text": "soldiers",
+                                    "start_token": 12,
+                                    "end_token": 12
+                                },
+                                {
+                                    "role": "Origin",
+                                    "text": "Rwanda",
+                                    "start_token": 14,
+                                    "end_token": 14
+                                },
+                                {
+                                    "role": "Destination",
+                                    "text": "Congo",
+                                    "start_token": 18,
+                                    "end_token": 18
+                                }
+                            ],
+                            "duration": "weeks"
+                        }
+                    ],
+                    "ner": [
+                        [
+                            12,
+                            12,
+                            "PER"
+                        ],
+                        [
+                            14,
+                            14,
+                            "GPE"
+                        ],
+                        [
+                            18,
+                            18,
+                            "GPE"
+                        ],
+                        [
+                            23,
+                            23,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 2,
+                    "sen_num": 1,
+                    "sentence": "But it will be a thing that doesn&#39;t go far... Don&#39;t soldiers from Rwanda usually go to Congo to steal stones for Rwanda anyway?",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.009336805611896726,
+                        "fairness.virtue": 0.006061507848151935,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.04387089579637391,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.005759031101970162,
+                        "ingroup.vice": 0.0033893442476274375,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0.008216906017789181,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": 0.006099100986664946,
+                        "intensity_concreteness": 0.012261663808304991,
+                        "concreteness.vice": 0,
+                        "concreteness.virtue": 0.012261663808304991
+                    }
+                },
+                {
+                    "tokens": [
+                        "Now",
+                        "imagine",
+                        "if",
+                        "you",
+                        "start",
+                        "stealing",
+                        "drugs",
+                        "from",
+                        "the",
+                        "bosses",
+                        "there",
+                        "in",
+                        "Maputo",
+                        "..."
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            9,
+                            9,
+                            "PER"
+                        ],
+                        [
+                            12,
+                            12,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "line_num": 2,
+                    "sen_num": 2,
+                    "sentence": "Now imagine if you start stealing drugs from the bosses there in Maputo...",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.013601052968336663,
+                        "fairness.virtue": 0.009450399334489611,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.0148972403243262,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.005774103112094956,
+                        "ingroup.vice": 0.012546657269265297,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0.010732093132239603,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.012506193170944849,
+                        "intensity_concreteness": 0.0032464340200121836,
+                        "concreteness.vice": 0.0032464340200121836,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31150
+        },
+        {
+            "date": "2021-05-25T02:31:55",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Are",
+                        "you",
+                        "assuming",
+                        "the",
+                        "idea",
+                        "was",
+                        "French",
+                        "?"
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "line_num": 3,
+                    "sen_num": 0,
+                    "sentence": "Are you assuming the idea was French?",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.013597508286747814,
+                        "fairness.virtue": 0.006781613874244207,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.01955539285142828,
+                        "harm.virtue": 0.0010014862766920241,
+                        "harm.vice": 0,
+                        "ingroup.vice": 0.006416561867242591,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0.010716045616624304,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.06712843850255013,
+                        "intensity_concreteness": 0.011485434065244056,
+                        "concreteness.vice": 0.011485434065244056,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "Why",
+                        "?"
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        1
+                    ],
+                    "line_num": 3,
+                    "sen_num": 1,
+                    "sentence": "Why?"
+                }
+            ],
+            "telegram_id": 31153
+        },
+        {
+            "date": "2021-05-25T02:32:56",
+            "text_results": [
+                {
+                    "tokens": [
+                        "It",
+                        "seems",
+                        "to",
+                        "me",
+                        "that",
+                        ",",
+                        "in",
+                        "fact",
+                        ",",
+                        "the",
+                        "decision",
+                        "serves",
+                        "Frelimo",
+                        "better",
+                        "than",
+                        "France"
+                    ],
+                    "events": [
+                        {
+                            "event_type": "",
+                            "triggers": [
+                                {
+                                    "event_type": "",
+                                    "text": "seems",
+                                    "start_token": 1,
+                                    "end_token": 1
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "hours"
+                        },
+                        {
+                            "event_type": "",
+                            "triggers": [
+                                {
+                                    "event_type": "",
+                                    "text": "serves",
+                                    "start_token": 11,
+                                    "end_token": 11
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "weeks",
+                            "speculation": true
+                        }
+                    ],
+                    "ner": [
+                        [
+                            12,
+                            12,
+                            "GPE"
+                        ],
+                        [
+                            15,
+                            15,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [
+                        [
+                            1,
+                            11,
+                            "AFTER"
+                        ]
+                    ],
+                    "negation_cue": [
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "line_num": 4,
+                    "sen_num": 0,
+                    "sentence": "It seems to me that, in fact, the decision serves Frelimo better than France",
+                    "mf": {
+                        "authority.virtue": 0.01760685571244104,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.011452797417464728,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.04181889135357202,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.009480500368032036,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.004224913609000488,
+                        "purity.vice": 0.01588630810129547,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.09456326439976692,
+                        "intensity_concreteness": 0.01640061187344375,
+                        "concreteness.vice": 0.01640061187344375,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31154
+        },
+        {
+            "date": "2021-05-25T02:47:12",
+            "text_results": [
+                {
+                    "tokens": [
+                        "I",
+                        "say",
+                        "this",
+                        "because",
+                        ",",
+                        "however",
+                        "aligned",
+                        "Rwanda",
+                        "is",
+                        "with",
+                        "French",
+                        "interests",
+                        ",",
+                        "I",
+                        "imagine",
+                        "that",
+                        "Macron",
+                        "preferred",
+                        "the",
+                        "foreign",
+                        "legion"
+                    ],
+                    "events": [
+                        {
+                            "event_type": "",
+                            "triggers": [
+                                {
+                                    "event_type": "",
+                                    "text": "say",
+                                    "start_token": 1,
+                                    "end_token": 1
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "mins"
+                        },
+                        {
+                            "event_type": "",
+                            "triggers": [
+                                {
+                                    "event_type": "",
+                                    "text": "preferred",
+                                    "start_token": 17,
+                                    "end_token": 17
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "weeks"
+                        },
+                        {
+                            "event_type": "",
+                            "triggers": [
+                                {
+                                    "event_type": "",
+                                    "text": "imagine",
+                                    "start_token": 14,
+                                    "end_token": 14
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "hours"
+                        }
+                    ],
+                    "ner": [
+                        [
+                            7,
+                            7,
+                            "GPE"
+                        ],
+                        [
+                            10,
+                            10,
+                            "GPE"
+                        ],
+                        [
+                            16,
+                            16,
+                            "PER"
+                        ],
+                        [
+                            20,
+                            20,
+                            "PER"
+                        ]
+                    ],
+                    "relations": [
+                        [
+                            1,
+                            14,
+                            "AFTER"
+                        ],
+                        [
+                            1,
+                            17,
+                            "AFTER"
+                        ],
+                        [
+                            14,
+                            17,
+                            "AFTER"
+                        ]
+                    ],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 5,
+                    "sen_num": 0,
+                    "sentence": "I say this because, however aligned Rwanda is with French interests, I imagine that Macron preferred the foreign legion",
+                    "mf": {
+                        "authority.virtue": 0.011285309944124352,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.009243661208268122,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.020273384893230974,
+                        "harm.virtue": 0.010686132748024794,
+                        "harm.vice": 0,
+                        "ingroup.vice": 0.037268230015732415,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.007376830415266394
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.06726635450666602,
+                        "intensity_concreteness": 0.015107447317448857,
+                        "concreteness.vice": 0.015107447317448857,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31155
+        },
+        {
+            "date": "2021-05-25T03:04:28",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Without",
+                        "a",
+                        "doubt",
+                        "..."
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        1,
+                        1,
+                        0
+                    ],
+                    "line_num": 6,
+                    "sen_num": 0,
+                    "sentence": "Without a doubt..."
+                },
+                {
+                    "tokens": [
+                        "Thank",
+                        "God",
+                        "you",
+                        "don&#39;t",
+                        "do",
+                        "what",
+                        "Macron",
+                        "preferred"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            1,
+                            1,
+                            "PER"
+                        ],
+                        [
+                            6,
+                            6,
+                            "PER"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "line_num": 6,
+                    "sen_num": 1,
+                    "sentence": "Thank God you don&#39;t do what Macron preferred",
+                    "mf": {
+                        "authority.virtue": 0.007544812267763637,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.011724577870129885,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.011045502800207259,
+                        "harm.virtue": 0.01387574145684465,
+                        "harm.vice": 0,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.018619685403164624,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.014895863647695393
+                    },
+                    "concreteness": {
+                        "bias_concreteness": 0.001887517049908638,
+                        "intensity_concreteness": 0.0070701247442165206,
+                        "concreteness.vice": 0,
+                        "concreteness.virtue": 0.0070701247442165206
+                    }
+                }
+            ],
+            "telegram_id": 31156
+        },
+        {
+            "date": "2021-05-25T03:37:06",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Look",
+                        ",",
+                        "I",
+                        "get",
+                        "divided",
+                        ",",
+                        "you",
+                        "know",
+                        "."
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 7,
+                    "sen_num": 0,
+                    "sentence": "Look, I get divided, you know.",
+                    "mf": {
+                        "authority.virtue": 0.0014217595139303814,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.015147869269205772,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.04646599031239308,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.0042083996246799794,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.0012198285393386805,
+                        "purity.vice": 0.004225886149063844,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.0463384035974741,
+                        "intensity_concreteness": 0.005597797235527904,
+                        "concreteness.vice": 0.005597797235527904,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "Rwandan",
+                        "soldiers",
+                        ",",
+                        "even",
+                        "if",
+                        "they",
+                        "come",
+                        "to",
+                        "defend",
+                        "the",
+                        "French",
+                        "agenda",
+                        ",",
+                        "they",
+                        "will",
+                        "always",
+                        "be",
+                        "more",
+                        "independent",
+                        "than",
+                        "the",
+                        "legion",
+                        "."
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            0,
+                            0,
+                            "GPE"
+                        ],
+                        [
+                            1,
+                            1,
+                            "PER"
+                        ],
+                        [
+                            10,
+                            10,
+                            "GPE"
+                        ],
+                        [
+                            21,
+                            21,
+                            "ORG"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "line_num": 7,
+                    "sen_num": 1,
+                    "sentence": "Rwandan soldiers, even if they come to defend the French agenda, they will always be more independent than the legion.",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.015478372125894028,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.01033368151905298,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.028308597538769097,
+                        "harm.virtue": 0.0034513820005796073,
+                        "harm.vice": 0,
+                        "ingroup.vice": 0.006787245656208998,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.005174051616554475
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.06305768340826035,
+                        "intensity_concreteness": 0.010875927663744718,
+                        "concreteness.vice": 0.010875927663744718,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "I",
+                        "doubt",
+                        "that",
+                        "this",
+                        "factor",
+                        ",",
+                        "which",
+                        "brings",
+                        "uncertainty",
+                        ",",
+                        "serves",
+                        "anyone"
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 7,
+                    "sen_num": 2,
+                    "sentence": "I doubt that this factor, which brings uncertainty, serves anyone",
+                    "mf": {
+                        "authority.virtue": 0.0063228173725734345,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.00847365198002364,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.030397128520455934,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.0076615983124665304,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.006506509280651248,
+                        "purity.vice": 0.015818242193821525,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.07088851050606795,
+                        "intensity_concreteness": 0.008867091745904106,
+                        "concreteness.vice": 0.008867091745904106,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31157
+        },
+        {
+            "date": "2021-05-25T03:37:37",
+            "text_results": [
+                {
+                    "tokens": [
+                        "But",
+                        "as",
+                        "I",
+                        "said",
+                        "before",
+                        ":",
+                        "maybe",
+                        "it&#39;s",
+                        "for",
+                        "frelimo"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            9,
+                            9,
+                            "PER"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1
+                    ],
+                    "line_num": 8,
+                    "sen_num": 0,
+                    "sentence": "But as I said before: maybe it&#39;s for frelimo",
+                    "mf": {
+                        "authority.virtue": 0.005979312796093466,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.02253892701727382,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.07235857416230503,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.008376481648914462,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.0013098612688030413,
+                        "purity.vice": 0.011745516499758302,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.047081091751654945,
+                        "intensity_concreteness": 0.004080234734648973,
+                        "concreteness.vice": 0.004080234734648973,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31158
+        },
+        {
+            "date": "2021-05-25T03:52:48",
+            "text_results": [
+                {
+                    "tokens": [
+                        "#",
+                        "JornalEvidências",
+                        "de",
+                        "25",
+                        "de",
+                        "Maio",
+                        "2021",
+                        ",",
+                        "edition",
+                        "nr",
+                        "16",
+                        "."
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 9,
+                    "sen_num": 0,
+                    "sentence": "#JornalEvidências de 25 de Maio 2021, edition nr 16.",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.00030253631700860015,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.0011563564348124982,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.002384502768166305,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.00727629306746351,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.009794201774539789,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.0055909041178827945
+                    },
+                    "concreteness": {
+                        "bias_concreteness": 0.011080840602517128,
+                        "intensity_concreteness": 0.0034212401100861684,
+                        "concreteness.vice": 0,
+                        "concreteness.virtue": 0.0034212401100861684
+                    }
+                },
+                {
+                    "tokens": [
+                        "Now",
+                        "on",
+                        "newsstands",
+                        "in",
+                        "the",
+                        "city",
+                        "and",
+                        "province",
+                        "of",
+                        "Maputo",
+                        ",",
+                        "Beira",
+                        ",",
+                        "Tete",
+                        ",",
+                        "Chimoio",
+                        ",",
+                        "Quelimane",
+                        ",",
+                        "Nampula",
+                        "and",
+                        "Pemba",
+                        "."
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            2,
+                            2,
+                            "FAC"
+                        ],
+                        [
+                            5,
+                            5,
+                            "GPE"
+                        ],
+                        [
+                            7,
+                            7,
+                            "GPE"
+                        ],
+                        [
+                            9,
+                            9,
+                            "GPE"
+                        ],
+                        [
+                            11,
+                            11,
+                            "GPE"
+                        ],
+                        [
+                            13,
+                            13,
+                            "GPE"
+                        ],
+                        [
+                            15,
+                            15,
+                            "GPE"
+                        ],
+                        [
+                            17,
+                            17,
+                            "GPE"
+                        ],
+                        [
+                            19,
+                            19,
+                            "GPE"
+                        ],
+                        [
+                            21,
+                            21,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "line_num": 9,
+                    "sen_num": 1,
+                    "sentence": "Now on newsstands in the city and province of Maputo, Beira, Tete, Chimoio, Quelimane, Nampula and Pemba.",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.012389742622656874,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.006154656582758988,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.0030388439050674826,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.00974427117502135,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.0028559569493692067,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.00337250862050698
+                    },
+                    "concreteness": {
+                        "bias_concreteness": 0.04928837865591049,
+                        "intensity_concreteness": 0.006359645531718183,
+                        "concreteness.vice": 0,
+                        "concreteness.virtue": 0.006359645531718183
+                    }
+                },
+                {
+                    "tokens": [
+                        "PS",
+                        ":",
+                        "The",
+                        "Digital",
+                        "version",
+                        "will",
+                        "be",
+                        "available",
+                        "on",
+                        "the",
+                        "website",
+                        ":",
+                        "www.evidencias.co.mz",
+                        "Best",
+                        "wishes",
+                        "for",
+                        "a",
+                        "great",
+                        "reading",
+                        "."
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "line_num": 9,
+                    "sen_num": 2,
+                    "sentence": "PS: The Digital version will be available on the website: www.evidencias.co.mz Best wishes for a great reading.",
+                    "mf": {
+                        "authority.virtue": 0.007965530446914396,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.006477613123637626,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.016439427338773103,
+                        "harm.virtue": 0.015815455633016322,
+                        "harm.vice": 0,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.011985078993418987,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.007435407348493734
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.015321605105947872,
+                        "intensity_concreteness": 0.004782866133594583,
+                        "concreteness.vice": 0.004782866133594583,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31160
+        },
+        {
+            "date": "2021-05-25T07:29:55",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Is",
+                        "it",
+                        "one",
+                        "more",
+                        "thing",
+                        "out",
+                        "of",
+                        "control",
+                        "?"
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "line_num": 10,
+                    "sen_num": 0,
+                    "sentence": "Is it one more thing out of control?",
+                    "mf": {
+                        "authority.virtue": 0.01787074556964923,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.01160068690584816,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.03625277709414463,
+                        "harm.virtue": 0.0030762234154755362,
+                        "harm.vice": 0,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.00425231041393788,
+                        "purity.vice": 0.012162084146575772,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.053818505781237036,
+                        "intensity_concreteness": 0.005041691103327349,
+                        "concreteness.vice": 0.005041691103327349,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "Another",
+                        "lie",
+                        "from",
+                        "Frelimo",
+                        "?"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            3,
+                            3,
+                            "PER"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "line_num": 10,
+                    "sen_num": 1,
+                    "sentence": "Another lie from Frelimo?",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.011677728110455893,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.0163170521264826,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.12211638915753309,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.04359456798354325,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.004596387386680362,
+                        "purity.vice": 0.008979545543396777,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.038909973576664925,
+                        "intensity_concreteness": 0.003997806065821098,
+                        "concreteness.vice": 0.003997806065821098,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "O",
+                        ",",
+                        "just",
+                        "the",
+                        "same",
+                        "ignorance",
+                        "as",
+                        "always",
+                        "(",
+                        "theirs",
+                        ")",
+                        "?"
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 10,
+                    "sen_num": 2,
+                    "sentence": "O, just the same ignorance as always (theirs)?",
+                    "mf": {
+                        "authority.virtue": 0.004425639313472596,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.04075165290105298,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.05825639730808291,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.0026527627132850594,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.007508383123065464,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.009789006863495986
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.10011856071650982,
+                        "intensity_concreteness": 0.030358525587445853,
+                        "concreteness.vice": 0.030358525587445853,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "Can&#39;t",
+                        "you",
+                        "have",
+                        "a",
+                        "clean",
+                        "thing",
+                        "in",
+                        "Mozambique",
+                        "?",
+                        "?",
+                        "?"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            7,
+                            7,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "line_num": 10,
+                    "sen_num": 3,
+                    "sentence": "Can&#39;t you have a clean thing in Mozambique???",
+                    "mf": {
+                        "authority.virtue": 0.0030450531879191675,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.012408095347445617,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.040122951403970854,
+                        "harm.virtue": 0.017574421364176387,
+                        "harm.vice": 0,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.0018133419693337493,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.01986938596452244
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.011554181575775146,
+                        "intensity_concreteness": 0.0029405375760829613,
+                        "concreteness.vice": 0.0029405375760829613,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "Be",
+                        "it",
+                        "information",
+                        "or",
+                        "business",
+                        "or",
+                        "disease",
+                        "or",
+                        "war",
+                        "or",
+                        "any",
+                        "other",
+                        "matter",
+                        "..."
+                    ],
+                    "events": [
+                        {
+                            "event_type": "Conflict:Attack",
+                            "triggers": [
+                                {
+                                    "event_type": "Conflict:Attack",
+                                    "text": "war",
+                                    "start_token": 8,
+                                    "end_token": 8
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "days"
+                        }
+                    ],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "line_num": 10,
+                    "sen_num": 4,
+                    "sentence": "Be it information or business or disease or war or any other matter...",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.01122948858210935,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.009933440329807782,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.013423451527738703,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.026489271876265662,
+                        "ingroup.vice": 0.0034178176828048405,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0.08747063706381149,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.0448663750042518,
+                        "intensity_concreteness": 0.006595939244895717,
+                        "concreteness.vice": 0.006595939244895717,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31164
+        },
+        {
+            "date": "2021-05-25T12:04:45",
+            "text_results": [
+                {
+                    "tokens": [
+                        "In",
+                        "all",
+                        "countries",
+                        "there",
+                        "has",
+                        "been",
+                        "excess",
+                        "mortality",
+                        "due",
+                        "to",
+                        "covid",
+                        "."
+                    ],
+                    "events": [
+                        {
+                            "event_type": "Life:Die",
+                            "triggers": [
+                                {
+                                    "event_type": "Life:Die",
+                                    "text": "mortality",
+                                    "start_token": 7,
+                                    "end_token": 7
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "role": "Place",
+                                    "text": "countries",
+                                    "start_token": 2,
+                                    "end_token": 2
+                                }
+                            ],
+                            "duration": "months",
+                            "speculation": true
+                        }
+                    ],
+                    "ner": [
+                        [
+                            2,
+                            2,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "line_num": 11,
+                    "sen_num": 0,
+                    "sentence": "In all countries there has been excess mortality due to covid.",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.004711879928808888,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.004212928067781963,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.0047633356716764675,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.008744902930338277,
+                        "ingroup.vice": 0.004325456732906669,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0.09533396286743884,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.0825721263885498,
+                        "intensity_concreteness": 0.0075289413195412935,
+                        "concreteness.vice": 0.0075289413195412935,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31168
+        },
+        {
+            "date": "2021-05-25T12:05:12",
+            "text_results": [
+                {
+                    "tokens": [
+                        "I",
+                        "imagine",
+                        "this",
+                        "is",
+                        "also",
+                        "the",
+                        "case",
+                        "in",
+                        "Mozambique"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            8,
+                            8,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 12,
+                    "sen_num": 0,
+                    "sentence": "I imagine this is also the case in Mozambique",
+                    "mf": {
+                        "authority.virtue": 0.008465280647014156,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.01322723341083555,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.023817674030133365,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.006485897800901922,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.003078259775173779,
+                        "purity.vice": 0.023517032347897676,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.038060732651501894,
+                        "intensity_concreteness": 0.004121224625755781,
+                        "concreteness.vice": 0.004121224625755781,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31169
+        },
+        {
+            "date": "2021-05-25T12:06:12",
+            "text_results": [
+                {
+                    "tokens": [
+                        "The",
+                        "fact",
+                        "that",
+                        "there",
+                        "is",
+                        "a",
+                        "mass",
+                        "grave",
+                        "and",
+                        "an",
+                        "increase",
+                        "in",
+                        "the",
+                        "number",
+                        "of",
+                        "people",
+                        "buried",
+                        "there",
+                        "says",
+                        "a",
+                        "lot",
+                        "about",
+                        "the",
+                        "living",
+                        "conditions",
+                        "of",
+                        "a",
+                        "large",
+                        "part",
+                        "of",
+                        "the",
+                        "population"
+                    ],
+                    "events": [
+                        {
+                            "event_type": "",
+                            "triggers": [
+                                {
+                                    "event_type": "",
+                                    "text": "buried",
+                                    "start_token": 16,
+                                    "end_token": 16
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "weeks"
+                        },
+                        {
+                            "event_type": "",
+                            "triggers": [
+                                {
+                                    "event_type": "",
+                                    "text": "says",
+                                    "start_token": 18,
+                                    "end_token": 18
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "days"
+                        }
+                    ],
+                    "ner": [
+                        [
+                            7,
+                            7,
+                            "FAC"
+                        ],
+                        [
+                            15,
+                            15,
+                            "PER"
+                        ],
+                        [
+                            31,
+                            31,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [
+                        [
+                            16,
+                            18,
+                            "BEFORE"
+                        ]
+                    ],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "line_num": 13,
+                    "sen_num": 0,
+                    "sentence": "The fact that there is a mass grave and an increase in the number of people buried there says a lot about the living conditions of a large part of the population",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.013072921347155259,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.007371915448912934,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.014291880948105946,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.005679563994651047,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.005721580766941522,
+                        "purity.vice": 0.020784774491474627,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.03229117313943183,
+                        "intensity_concreteness": 0.00532304334702341,
+                        "concreteness.vice": 0.00532304334702341,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31170
+        },
+        {
+            "date": "2021-05-25T12:07:18",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Quite",
+                        "honestly",
+                        ",",
+                        "but",
+                        "then",
+                        "that",
+                        "newspaper",
+                        "headline",
+                        "would",
+                        "not",
+                        "be",
+                        "correct",
+                        "..."
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            6,
+                            6,
+                            "ORG"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        1,
+                        1,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "line_num": 14,
+                    "sen_num": 0,
+                    "sentence": "Quite honestly, but then that newspaper headline would not be correct...",
+                    "mf": {
+                        "authority.virtue": 0.002719931082997932,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.009042305450547213,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.05301647769880199,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.023447546632689442,
+                        "ingroup.vice": 0.006234991672085595,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0.013124082486315166,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.07007397525012493,
+                        "intensity_concreteness": 0.016502254861197323,
+                        "concreteness.vice": 0.016502254861197323,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "The",
+                        "truth",
+                        ",",
+                        "if",
+                        "it",
+                        "were",
+                        "CV19",
+                        ",",
+                        "would",
+                        "be",
+                        "to",
+                        "write",
+                        ":",
+                        "They",
+                        "stole",
+                        "2B",
+                        "and",
+                        "let",
+                        "us",
+                        "die",
+                        "from",
+                        "CV19"
+                    ],
+                    "events": [
+                        {
+                            "event_type": "Life:Die",
+                            "triggers": [
+                                {
+                                    "event_type": "Life:Die",
+                                    "text": "die",
+                                    "start_token": 19,
+                                    "end_token": 19
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "days"
+                        }
+                    ],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "line_num": 14,
+                    "sen_num": 1,
+                    "sentence": "The truth, if it were CV19, would be to write: They stole 2B and let us die from CV19",
+                    "mf": {
+                        "authority.virtue": 0.012722244431036082,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.005449054521158753,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.04367688982625349,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.01865538437891113,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.009323388412029336,
+                        "purity.vice": 0.012451924508158498,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.04087606072425842,
+                        "intensity_concreteness": 0.009354610347109322,
+                        "concreteness.vice": 0.009354610347109322,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31171
+        },
+        {
+            "date": "2021-05-25T12:08:56",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Because",
+                        "André",
+                        ",",
+                        "to",
+                        "advertise",
+                        "to",
+                        "say",
+                        "that",
+                        "Museums",
+                        "and",
+                        "Theaters",
+                        "are",
+                        "closed",
+                        ",",
+                        "as",
+                        "if",
+                        "it",
+                        "were",
+                        "Paris",
+                        ",",
+                        "but",
+                        "then",
+                        "there",
+                        "is",
+                        "no",
+                        "paracetamol",
+                        ",",
+                        "is",
+                        "another",
+                        "nonsense",
+                        "of",
+                        "the",
+                        "Government"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            1,
+                            1,
+                            "PER"
+                        ],
+                        [
+                            8,
+                            8,
+                            "FAC"
+                        ],
+                        [
+                            10,
+                            10,
+                            "FAC"
+                        ],
+                        [
+                            18,
+                            18,
+                            "GPE"
+                        ],
+                        [
+                            32,
+                            32,
+                            "ORG"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "line_num": 15,
+                    "sen_num": 0,
+                    "sentence": "Because André, to advertise to say that Museums and Theaters are closed, as if it were Paris, but then there is no paracetamol, is another nonsense of the Government",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.005770861231774819,
+                        "fairness.virtue": 0.007015341151669731,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.03260841448558393,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.009339595548551953,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.0028873024697912883,
+                        "purity.vice": 0.014293541801460814,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": 0.0010106787085533142,
+                        "intensity_concreteness": 0.01026642252586067,
+                        "concreteness.vice": 0,
+                        "concreteness.virtue": 0.01026642252586067
+                    }
+                }
+            ],
+            "telegram_id": 31172
+        },
+        {
+            "date": "2021-05-25T12:11:04",
+            "text_results": [
+                {
+                    "tokens": [
+                        "But",
+                        "even",
+                        "where",
+                        "they",
+                        "didn&#39;t",
+                        "steal",
+                        "2B",
+                        "they",
+                        "died",
+                        "of",
+                        "covid"
+                    ],
+                    "events": [
+                        {
+                            "event_type": "Life:Die",
+                            "triggers": [
+                                {
+                                    "event_type": "Life:Die",
+                                    "text": "died",
+                                    "start_token": 8,
+                                    "end_token": 8
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "hours",
+                            "speculation": true
+                        }
+                    ],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "line_num": 16,
+                    "sen_num": 0,
+                    "sentence": "But even where they didn&#39;t steal 2B they died of covid",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.011502444519321317,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.001407522254849675,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.020925291386098156,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.014994498411797744,
+                        "ingroup.vice": 0.00987150046052209,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0.047665834712740635,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.0518447071313858,
+                        "intensity_concreteness": 0.01145244902512943,
+                        "concreteness.vice": 0.01145244902512943,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31174
+        },
+        {
+            "date": "2021-05-25T12:12:59",
+            "text_results": [
+                {
+                    "tokens": [
+                        "I",
+                        "think",
+                        "I&#39;m",
+                        "a",
+                        ",",
+                        "bad",
+                        "explicare",
+                        "."
+                    ],
+                    "events": [],
+                    "ner": [],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "line_num": 17,
+                    "sen_num": 0,
+                    "sentence": "I think I&#39;m a, bad explicare.",
+                    "mf": {
+                        "authority.virtue": 0.010128327639867485,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.017416954098842936,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.19715018125833286,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.019144621865157436,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.0022756562527961773,
+                        "purity.vice": 0.015500597887726697,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.07985372096300125,
+                        "intensity_concreteness": 0.013334825572864565,
+                        "concreteness.vice": 0.013334825572864565,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "It",
+                        "is",
+                        "exactly",
+                        "what",
+                        "you",
+                        "wrote",
+                        "here",
+                        ",",
+                        "the",
+                        "point",
+                        "."
+                    ],
+                    "events": [
+                        {
+                            "event_type": "",
+                            "triggers": [
+                                {
+                                    "event_type": "",
+                                    "text": "is",
+                                    "start_token": 1,
+                                    "end_token": 1
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "hours"
+                        },
+                        {
+                            "event_type": "",
+                            "triggers": [
+                                {
+                                    "event_type": "",
+                                    "text": "wrote",
+                                    "start_token": 5,
+                                    "end_token": 5
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "mins"
+                        }
+                    ],
+                    "ner": [],
+                    "relations": [
+                        [
+                            1,
+                            5,
+                            "AFTER"
+                        ]
+                    ],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 17,
+                    "sen_num": 1,
+                    "sentence": "It is exactly what you wrote here, the point.",
+                    "mf": {
+                        "authority.virtue": 0.005589939369419043,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.007258066672919245,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.06070069251534817,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.0065371223909629775,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.00893209008222947,
+                        "purity.vice": 0.006286351460226214,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.0736493868753314,
+                        "intensity_concreteness": 0.0067864666035479145,
+                        "concreteness.vice": 0.0067864666035479145,
+                        "concreteness.virtue": 0
+                    }
+                },
+                {
+                    "tokens": [
+                        "In",
+                        "Mozambique",
+                        "thanks",
+                        "to",
+                        "the",
+                        "theft",
+                        "of",
+                        "2B",
+                        "and",
+                        "beyond",
+                        ",",
+                        "there",
+                        "is",
+                        "no",
+                        "ability",
+                        "to",
+                        "tell",
+                        "well",
+                        "who",
+                        "died",
+                        "so"
+                    ],
+                    "events": [
+                        {
+                            "event_type": "Life:Die",
+                            "triggers": [
+                                {
+                                    "event_type": "Life:Die",
+                                    "text": "died",
+                                    "start_token": 19,
+                                    "end_token": 19
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "role": "Place",
+                                    "text": "Mozambique",
+                                    "start_token": 1,
+                                    "end_token": 1
+                                }
+                            ],
+                            "duration": "hours"
+                        }
+                    ],
+                    "ner": [
+                        [
+                            1,
+                            1,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 17,
+                    "sen_num": 2,
+                    "sentence": "In Mozambique thanks to the theft of 2B and beyond, there is no ability to tell well who died so",
+                    "mf": {
+                        "authority.virtue": 0.014874260064241723,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.007759983673837814,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.02732762518089263,
+                        "harm.virtue": 0.012316558355516248,
+                        "harm.vice": 0,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.010978273008386727,
+                        "purity.vice": 0.01537807243362429,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.06214010864496231,
+                        "intensity_concreteness": 0.011295725211203252,
+                        "concreteness.vice": 0.011295725211203252,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31176
+        },
+        {
+            "date": "2021-05-25T12:13:26",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Diseases",
+                        "are",
+                        "the",
+                        "most",
+                        "democratic",
+                        "things",
+                        "in",
+                        "the",
+                        "world"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            8,
+                            8,
+                            "LOC"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 18,
+                    "sen_num": 0,
+                    "sentence": "Diseases are the most democratic things in the world",
+                    "mf": {
+                        "authority.virtue": 0.0060389790607491,
+                        "authority.vice": 0,
+                        "fairness.virtue": 0.004905030964534977,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.01754873183516656,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.0013799787826443259,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.013190982175213552,
+                        "purity.vice": 0.07463716457183349,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.0667668548412621,
+                        "intensity_concreteness": 0.010112285217849414,
+                        "concreteness.vice": 0.010112285217849414,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31177
+        },
+        {
+            "date": "2021-05-26T03:08:30",
+            "text_results": [
+                {
+                    "tokens": [
+                        "I",
+                        "wonder",
+                        "if",
+                        "we",
+                        "don&#39;t",
+                        "have",
+                        "some",
+                        "of",
+                        "these",
+                        "in",
+                        "Moz",
+                        "either",
+                        "?"
+                    ],
+                    "events": [],
+                    "ner": [
+                        [
+                            10,
+                            10,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [],
+                    "negation_cue": [
+                        3,
+                        3,
+                        1,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "line_num": 19,
+                    "sen_num": 0,
+                    "sentence": "I wonder if we don&#39;t have some of these in Moz either?",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.013390594453528562,
+                        "fairness.virtue": 0.014218618478959666,
+                        "fairness.vice": 0,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.05271205835043443,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.011333333685178248,
+                        "ingroup.vice": 0.016503800174460896,
+                        "ingroup.virtue": 0,
+                        "purity.vice": 0.014781923586404145,
+                        "purity.virtue": 0
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.03623359650373459,
+                        "intensity_concreteness": 0.010700698989418472,
+                        "concreteness.vice": 0.010700698989418472,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31186
+        },
+        {
+            "date": "2021-05-26T16:20:54",
+            "text_results": [
+                {
+                    "tokens": [
+                        "Al",
+                        "Shabab",
+                        "purged",
+                        "many",
+                        "swahili",
+                        "speakers",
+                        "from",
+                        "its",
+                        "ranks",
+                        ",",
+                        "they",
+                        "went",
+                        "to",
+                        "mozambique"
+                    ],
+                    "events": [
+                        {
+                            "event_type": "Movement:Transport",
+                            "triggers": [
+                                {
+                                    "event_type": "Movement:Transport",
+                                    "text": "purged",
+                                    "start_token": 2,
+                                    "end_token": 2
+                                }
+                            ],
+                            "arguments": [],
+                            "duration": "weeks"
+                        },
+                        {
+                            "event_type": "Movement:Transport",
+                            "triggers": [
+                                {
+                                    "event_type": "Movement:Transport",
+                                    "text": "went",
+                                    "start_token": 11,
+                                    "end_token": 11
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "role": "Destination",
+                                    "text": "mozambique",
+                                    "start_token": 13,
+                                    "end_token": 13
+                                }
+                            ],
+                            "duration": "hours"
+                        }
+                    ],
+                    "ner": [
+                        [
+                            0,
+                            1,
+                            "ORG"
+                        ],
+                        [
+                            4,
+                            4,
+                            "GPE"
+                        ],
+                        [
+                            5,
+                            5,
+                            "PER"
+                        ],
+                        [
+                            8,
+                            8,
+                            "PER"
+                        ],
+                        [
+                            13,
+                            13,
+                            "GPE"
+                        ]
+                    ],
+                    "relations": [
+                        [
+                            2,
+                            11,
+                            "BEFORE"
+                        ]
+                    ],
+                    "negation_cue": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "negation_scope": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "line_num": 20,
+                    "sen_num": 0,
+                    "sentence": "Al Shabab purged many swahili speakers from its ranks, they went to mozambique",
+                    "mf": {
+                        "authority.virtue": 0,
+                        "authority.vice": 0.004575161261039021,
+                        "fairness.virtue": 0,
+                        "fairness.vice": 0.0024322124337974775,
+                        "general_morality.virtue": 0,
+                        "general_morality.vice": 0.007186929778132828,
+                        "harm.virtue": 0,
+                        "harm.vice": 0.0036000086027800416,
+                        "ingroup.vice": 0,
+                        "ingroup.virtue": 0.0037890941792852392,
+                        "purity.vice": 0,
+                        "purity.virtue": 0.00712968125520713
+                    },
+                    "concreteness": {
+                        "bias_concreteness": -0.02116491219827107,
+                        "intensity_concreteness": 0.00809771166214505,
+                        "concreteness.vice": 0.00809771166214505,
+                        "concreteness.virtue": 0
+                    }
+                }
+            ],
+            "telegram_id": 31201
+        }
+    ]
+}

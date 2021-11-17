@@ -1,0 +1,17 @@
+{
+  "--alpha-loss": "0.2",
+  "--bert-lr": "2e-5",
+  "--checkpoint-path": "2021-09-09-18:42:30.pt",
+  "--dev-path": "data/dev/2018-E-c-En-dev.txt",
+  "--eval-batch-size": "32",
+  "--ffn-lr": "0.001",
+  "--help": false,
+  "--lang": "English",
+  "--loss-type": "cross-entropy",
+  "--max-epoch": "20",
+  "--max-length": "128",
+  "--output-dropout": "0.1",
+  "--seed": "42",
+  "--train-batch-size": "32",
+  "--train-path": "data/train/2018-E-c-En-train.txt"
+}

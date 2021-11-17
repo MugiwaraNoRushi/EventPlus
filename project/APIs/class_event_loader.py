@@ -5,8 +5,8 @@ import time
 import spacy
 import json
 sys.path.append("..")
-sys.path.append("../component/BioMedEventEx") # need to import config.py
-from component.BioMedEventEx.predict import BioMedEventExAPI
+# sys.path.append("../component/BioMedEventEx") # need to import config.py
+# from component.BioMedEventEx.predict import BioMedEventExAPI
 from component.TempRel.code.joint_model import TempRelAPI
 sys.path.append("../component/BETTER/joint") # need to import model in absolute path
 from component.BETTER.joint.event_pipeline_demo import BETTER_API
@@ -15,8 +15,8 @@ from component.BETTER.joint.event_pipeline_demo import BETTER_API
 import timeit
 import torch
 
-def closest(lst, K): 
-    return lst[min(range(len(lst)), key = lambda i: abs(lst[i]-K))] 
+def closest(lst, K):
+    return lst[min(range(len(lst)), key = lambda i: abs(lst[i]-K))]
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 
@@ -29,7 +29,7 @@ class EventAPIs:
         self.negation_detection = negation_detection
         self.rest_server_url = 'http://localhost'
         self.rest_server_port = 17000
-        self.bioMedEventExAPI = BioMedEventExAPI('../component/BioMedEventEx')
+        # self.bioMedEventExAPI = BioMedEventExAPI('../component/BioMedEventEx')
         self.betterAPI = BETTER_API('../component/BETTER/joint')
         self.temprelAPI = TempRelAPI(base_dir = '../component/TempRel/code')
         # self.durationAPI = DurationAPI(base_dir = '../component/Duration',
@@ -38,7 +38,7 @@ class EventAPIs:
         if self.negation_detection:
             sys.path.append("../component/NegationDetection")
             from component.NegationDetection.train import NegaionDetectionAPI
-            self.negationdetectionAPI = NegaionDetectionAPI(base_dir='../component/NegationDetection', 
+            self.negationdetectionAPI = NegaionDetectionAPI(base_dir='../component/NegationDetection',
                                                             functions=['cue_detection', 'scope_resolution'])
 
         self.spacy_pretrained_model = spacy.load("en_core_web_sm")
@@ -78,7 +78,7 @@ class EventAPIs:
 
         if self.show_time:
             s1 = timeit.default_timer()
-            print('Time for tokenization: ', s1 - start)  
+            print('Time for tokenization: ', s1 - start)
 
         # CALL APIs
         if params['domain'] == 'bio':
@@ -92,7 +92,7 @@ class EventAPIs:
 
         if self.show_time:
             s2 = timeit.default_timer()
-            print('Time for better: ', s2 - s1)  
+            print('Time for better: ', s2 - s1)
 
         if params['domain'] != 'bio':
             try:
@@ -112,7 +112,7 @@ class EventAPIs:
 
         if self.show_time:
             s3 = timeit.default_timer()
-            print('Time for temprel: ', s3 - s2)  
+            print('Time for temprel: ', s3 - s2)
 
         # MERGE TEMP_REL_RESULT and EVENT_EX_RESULT
         # create a event index mapping table, from temprel events to Mu's event
@@ -147,7 +147,7 @@ class EventAPIs:
 
         if self.show_time:
             s4 = timeit.default_timer()
-            print('Time for merge 1: ', s4 - s3)  
+            print('Time for merge 1: ', s4 - s3)
 
         # add event triggers that predicted by TempRel model but not in BETTER model to combined_result
         tmp_event_list = combined_result['events']
@@ -168,7 +168,7 @@ class EventAPIs:
 
         if self.show_time:
             s5 = timeit.default_timer()
-            print('Time for merge 2: ', s5 - s4)  
+            print('Time for merge 2: ', s5 - s4)
 
         # manually add duration
         for i, event_single in enumerate(combined_result['events']):
@@ -204,7 +204,7 @@ class EventAPIs:
 
         if self.show_time:
             s7 = timeit.default_timer()
-            print('Time for duration: ', s7 - s6) 
+            print('Time for duration: ', s7 - s6)
 
         # MERGE DURATION_RESULT IN FINAL COMBINED_RESULT
         for i, event_single in enumerate(combined_result['events']):
@@ -231,11 +231,11 @@ class EventAPIs:
 
             if self.show_time:
                 s8 = timeit.default_timer()
-                print('Time for negation detection: ', s8 - s7) 
-        
+                print('Time for negation detection: ', s8 - s7)
+
         if self.show_time:
             stop = timeit.default_timer()
-            print('Time for the whole inference: ', stop - start) 
+            print('Time for the whole inference: ', stop - start)
 
         print ('--------')
         print (combined_result)

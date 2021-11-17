@@ -63,7 +63,8 @@ $( function(){
 });
 
 function ajaxAnalyzeText (input_text, topic){
-    console.log("ajax start");
+    console.log("first line checking part 3");
+    console.log("ajax start statics");
     $body = $("body");
     $body.addClass("loading");
     $.ajax({
@@ -88,11 +89,14 @@ function ajaxAnalyzeText (input_text, topic){
             draw_graph(return_value);
             tokens = return_value.tokens;
             labels = return_value.labels;
+            neg_cue = return_value.neg_cue;
+            neg_scope = return_value.neg_scope;
             var annotation = "";
             var event_display = '<label>events:</label>';
             // what if we delete the maintained visitedList to get rid of the nested problem.
             // var visitedList = [];
             // find all start indexes for ners and all start indexes for triggers
+            // console.log(neg_cue)
             var ner = [];
             var triggers = new Set();
             for (i = 0; i < labels.length; i++) {
@@ -143,6 +147,23 @@ function ajaxAnalyzeText (input_text, topic){
                     ner_label = label.ner;
                     annotation += "<mark style='text-decoration-line: underline; text-decoration-style: wavy;'>{0}</mark><span style='{1}' position>{2}</span></mark>&nbsp;".template(text, ner_default, ner_label)
                 }
+
+                // var j = neg_cue.length;
+                // while (j--){
+                //   if (neg_cue[j] == i){
+                //     console.log(tokens[i],"while loop")
+                //     tokens[i] = "<b>{0}</b>".template(tokens[i]);
+                //   }
+                // }
+                //
+                // var j = neg_scope.length;
+                // while (j--){
+                //   if (neg_scope[j] == i){
+                //     console.log(tokens[i],"while loop")
+                //     tokens[i] = "<u>{0}</u>".template(tokens[i]);
+                //   }
+                // }
+
                 if (!(i in ner) && !(i in triggers) && !(visitListNer.includes(i))) {
                     annotation += tokens[i];
                     annotation += " ";
@@ -157,14 +178,15 @@ function ajaxAnalyzeText (input_text, topic){
 }
 
 function event_click(obj) {
+    console.log('Clicked')
     var clicks = $(this).data('clicks');
     if (clicks) {
          // odd clicks
-        // console.log("odd clicks")
+        console.log("odd clicks")
         onlyPlotThis(obj.getAttribute("eventId"));
     } else {
          // even clicks
-        // console.log("even clicks")
+        console.log("even clicks")
          $("#show_annotation").html(default_annotation)
 
     }
@@ -172,17 +194,49 @@ function event_click(obj) {
 }
 
 function onlyPlotThis(eventId) {
-
+    console.log(eventId);
     var annotation = "";
     var visitedList = [];
     var event_display = "";
     var this_event = {};
+    var temp_tokens = tokens.map((x) => x);
     // find everything corresponding to this event and mark it as a dictionary
     labels.forEach(function (item, index) {
         if (item.event == eventId) {
                 this_event[item.start] = item
             }
         });
+    // console.log(this_event);
+
+    // changing to show the speculation
+
+    console.log(this_event);
+    for (var key in this_event){
+      console.log("inside for loop")
+      console.log(this_event[key]);
+      label = this_event[key]
+      if ("speculation" in label){
+        console.log("yes")
+        if ("speculation_scope" in label){
+          arr_scope = label['speculation_scope']
+          for (var index in arr_scope){
+            var mark_style = "background:" + label.color + ";" + mark_default;
+            temp_tokens[index] = "<u>{0}</u>".template(tokens[index]);
+            console.log(tokens[index])
+          }
+        }
+        if ("speculation_cue" in label){
+          // console.log(annotation[event_dict['speculation_cue']])
+          var i = label['speculation_cue']
+          if (i != -1){
+            var mark_style = "background:" + label.color + ";" + mark_default;
+            temp_tokens[i] = "<mark style='{0}'><b>{1}</b></mark>".template(mark_style, tokens[i]);
+            console.log(temp_tokens[i])
+          }
+        }
+
+      }
+    }
 
     for (let i=0; i < tokens.length; i++) {
         // console.log(i.toString() + ": " + visitedList);
@@ -214,15 +268,19 @@ function onlyPlotThis(eventId) {
                           annotation += "<mark style='{0}'>{1}<span style='{2}'>{3}</span></mark>".template(mark_style, text, span_default, label.label);
                       }
                 }
+
             } else {
+
                 annotation += text;
                 annotation += " ";
             }
         } else {
-            annotation += tokens[i];
+            annotation += temp_tokens[i];
             annotation += " ";
         }
     }
+
+
     $("#show_annotation").html(annotation)
 
 }
@@ -237,5 +295,3 @@ function onlyPlotThis(eventId) {
 //     var mark_style = "background:" + "#42a4f0;" + mark_default
 //     $("#displayEvents").html("<mark style='{0}'>{1}</mark>".template(mark_style, cherry_obj.events[i].triggers.text))
 // }
-
-
