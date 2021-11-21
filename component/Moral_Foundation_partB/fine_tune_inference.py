@@ -59,16 +59,33 @@ if __name__ == '__main__':
 
     print('~~~~~~~~~~~~~~~ Starting Testing ~~~~~~~~~~~~~~~')
     '''read test data'''
-    test_texts = ["hello how are you","I am fine"]
-    test_set = handle_tokenize(texts=test_texts, tokenizer=tokenizer)
+    data = json.load(sys.argv[1])
+    result = data['result_list']
+    sentence_list = []
+    for obj in result:
+        for text in obj['text_results']:
+            sentence_list.append(text)
+
+    # test_texts = ["hello how are you","I am fine"]
+    test_set = handle_tokenize(texts=sentence_list, tokenizer=tokenizer)
     testing_loader = DataLoader(test_set, batch_size=VALID_BATCH_SIZE, shuffle=False, num_workers=4)
 
     MF_outputs, _ = validation(testing_loader, model)
 
     Final_list = []
 
-    for output in MF_outputs:
-        temp = dict(zip(long_mfs,output))
-        Final_list.append(temp)
+    # for output in MF_outputs:
+    #     temp = dict(zip(long_mfs,output))
+    #     Final_list.append(temp)
 
-    print(Final_list)
+    i = 0
+    for obj in result:
+        for text in obj['text_results']:
+            sentence_list.append(text)
+            text['mf2'] = dict(zip(long_mfs,MF_outputs[i]))
+            i += 1
+
+    with open(sys.argv[1], 'w', encoding='utf-8') as f:
+        # Use NumpyEncoder to convert numpy data to list
+        # Previous error: Object of type int64 is not JSON serializable
+        json.dump(data, f, indent=4, ensure_ascii=False)

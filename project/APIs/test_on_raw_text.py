@@ -1,18 +1,10 @@
-"""
-Run this script to run the API on raw text input
-
-# Under project
-python APIs/test_on_raw_text.py
-"""
+# pass the first argument as the event json
 import pandas as pd
-import pickle
 import sys
 import os
-import argparse
 import json
 import re
 import nltk
-from class_event_loader import EventAPIs
 from nltk import tokenize
 import numpy as np
 from frameAxis import FrameAxis
