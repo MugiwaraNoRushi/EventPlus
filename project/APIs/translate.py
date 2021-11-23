@@ -5,9 +5,9 @@ from google.cloud import translate
 import pandas as pd
 import os
 
-Length_message = 6
+
 # We would need key.json
-# Ask Fred if we can put it 
+# Ask Fred if we can put it
 
 def concattext(textblob):
     # if it's text just return it
@@ -43,7 +43,8 @@ project_id = "venice-text-translation"
 parent = f"projects/{project_id}"
 client = translate.TranslationServiceClient()
 
-data = json.load(open("result.json"))
+file_name = sys.argv[1]
+data = json.load(open(file_name))
 
 lnct = 0
 for midx, m in enumerate(data['messages']):
@@ -58,25 +59,7 @@ for midx, m in enumerate(data['messages']):
     if lnct > 200:
         break
 
-# json.dump(data, open("translated.json", "w"))
+output_file_name = file_name.split(".") + "translated" + ".json"
+json.dump(data, open(output_file_name, "w"))
 
 # Conversion and preprocessing
-data_pd = pd.DataFrame(data)
-
-output = data_pd.append(data_pd['messages'],ignore_index = True)
-
-dlist = list(data_pd['messages'])
-output = pd.DataFrame(dlist)
-# output.info()
-
-newdata = output.dropna(subset = ['translation_en'])
-
-newdata['translation_en'] = newdata['translation_en'].apply(lambda x: x['en_text'])
-
-newdata.rename (columns = {'date':'Date','text':'port_text','translation_en':'text'},inplace = True)
-
-newdata = newdata.dropna(subset = ['text'])
-
-data = newdata[newdata['text'].apply(lambda x: len(x.split()) > Length_message)]
-
-data.to_csv('final_file_to_be_read.csv')

@@ -174,7 +174,7 @@ if __name__ == '__main__':
     for i_line, sen_list in enumerate(data):
         # this contains the original output
         result_list_this_line = []
-        final_output = final_data_result[i_line]
+        final_output = final_dict_result[i_line]
         final_output['group_id'] = TELEGRAM_GROUP_ID
         final_output['text_results'] = result_list_this_line
         for i_sen, text in enumerate(sen_list):
