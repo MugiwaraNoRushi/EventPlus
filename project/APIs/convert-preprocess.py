@@ -1,7 +1,9 @@
 import pandas as pd
 import json
+import sys
+# Pass first argument as the input file path and second file path as the output file
 
-Length_message = sys.argv[2]
+Length_message = 6
 file_name = sys.argv[1]
 
 data_pd = pd.read_json(file_name)
@@ -22,5 +24,5 @@ newdata = newdata.dropna(subset = ['text'])
 
 data = newdata[newdata['text'].apply(lambda x: len(x.split()) > Length_message)]
 
-file_name = file_name.split('.')[0] + ".csv"
-data.to_csv(file_name)
+output_file_name = sys.argv[2]
+data.to_csv(output_file_name)

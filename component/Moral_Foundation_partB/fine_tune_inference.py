@@ -5,6 +5,36 @@ from transformers import BertTokenizer
 # from transformers.models.bert.modeling_bert import BertModel
 from utils import handle_tokenize, long_mfs
 import pickle
+import json
+import sys
+import numpy as np
+
+class NumpyEncoder(json.JSONEncoder):
+    """ Custom encoder for numpy data types """
+    def default(self, obj):
+        if isinstance(obj, (np.int_, np.intc, np.intp, np.int8,
+                            np.int16, np.int32, np.int64, np.uint8,
+                            np.uint16, np.uint32, np.uint64)):
+
+            return int(obj)
+
+        elif isinstance(obj, (np.float_, np.float16, np.float32, np.float64)):
+            return float(obj)
+
+        elif isinstance(obj, (np.complex_, np.complex64, np.complex128)):
+            return {'real': obj.real, 'imag': obj.imag}
+
+        elif isinstance(obj, (np.ndarray,)):
+            return obj.tolist()
+
+        elif isinstance(obj, (np.bool_)):
+            return bool(obj)
+
+        elif isinstance(obj, (np.void)):
+            return None
+
+        return json.JSONEncoder.default(self, obj)
+
 
 def validation(val_loader, model):
     import numpy as np
@@ -59,21 +89,26 @@ if __name__ == '__main__':
 
     print('~~~~~~~~~~~~~~~ Starting Testing ~~~~~~~~~~~~~~~')
     '''read test data'''
-    data = json.load(sys.argv[1])
+    data = json.load(open(sys.argv[1]))
     result = data['result_list']
     sentence_list = []
+    i = 0
     for obj in result:
         for text in obj['text_results']:
-            sentence_list.append(text)
+            sentence_list.append(text['sentence'])
+            i+=1
+            if i == 1:
+                print(text)
 
     # test_texts = ["hello how are you","I am fine"]
     test_set = handle_tokenize(texts=sentence_list, tokenizer=tokenizer)
     testing_loader = DataLoader(test_set, batch_size=VALID_BATCH_SIZE, shuffle=False, num_workers=4)
-
+    print("model loaded ")
     MF_outputs, _ = validation(testing_loader, model)
 
     Final_list = []
 
+    print("appending")
     # for output in MF_outputs:
     #     temp = dict(zip(long_mfs,output))
     #     Final_list.append(temp)
@@ -83,9 +118,11 @@ if __name__ == '__main__':
         for text in obj['text_results']:
             sentence_list.append(text)
             text['mf2'] = dict(zip(long_mfs,MF_outputs[i]))
+            if i == 1:
+                print(text['mf2'])
             i += 1
 
-    with open(sys.argv[1], 'w', encoding='utf-8') as f:
+    with open(sys.argv[2], 'w', encoding='utf-8') as f:
         # Use NumpyEncoder to convert numpy data to list
         # Previous error: Object of type int64 is not JSON serializable
-        json.dump(data, f, indent=4, ensure_ascii=False)
+        json.dump(data, f, indent=4, ensure_ascii=False,cls = NumpyEncoder)

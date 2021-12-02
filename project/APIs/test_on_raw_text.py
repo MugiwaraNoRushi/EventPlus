@@ -5,15 +5,18 @@ import os
 import json
 import re
 import nltk
+import argparse
 from nltk import tokenize
 import numpy as np
 from frameAxis import FrameAxis
+from class_event_loader import EventAPIs
 from gensim.models import KeyedVectors
 import gensim
 import gensim.downloader
-sys.path.append("..")
-sys.path.append("../component/Meta_data")
-from component.Meta_data.coref_pre_dup_date import perform_neural_coref
+import pickle
+# sys.path.append("..")
+# sys.path.append("../component/Meta_data")
+# from component.Meta_data.coref_pre_dup_date import perform_neural_coref
 
 class NumpyEncoder(json.JSONEncoder):
     """ Custom encoder for numpy data types """
@@ -115,8 +118,8 @@ if __name__ == '__main__':
     p.add_argument('-negation_detection', action='store_true', default=True,
                     help='Whether detection negation cue and scope resolution')
     # Adding the new arguments for the telegram group id and Moral Foundation model
-    p.add_argument('-telegram_group_id',type = str,default = '',help = ' choose the group id for telegram group')
-    p.add_argument('-type_of_mf_model',default = False,help ='whether to use the second model for MF or not')
+    # p.add_argument('-telegram_group_id',type = str,default = '',help = ' choose the group id for telegram group')
+    # p.add_argument('-type_of_mf_model',default = False,help ='whether to use the second model for MF or not')
     args = p.parse_args()
 
     if args.negation_detection:
@@ -127,34 +130,34 @@ if __name__ == '__main__':
 
 # --------------Loading all the models---------------------
 
-    print("Running FrameAxis Moral Foundations scores")
-    CON_Model_PATH = "word2vec-google-news-300"
-    model_con = gensim.downloader.load(CON_Model_PATH)
-    foundations_con = ['bias_concreteness','intensity_concreteness','concreteness.vice','concreteness.virtue']
-    fa_con = FrameAxis(mfd="customized", w2v_model=model_con)
-    if args.type_of_mf_model:
-        print("BERT Moral Foundation loading")
-        pass
-    else:
-        print("FrameAxis Model loading")
-        MF_Model_PATH = "../component/Embedding_MF/w2v_aylien_huff.txt"
-        model_mf = KeyedVectors.load_word2vec_format(MF_Model_PATH, binary=False)
-        fa_mf = FrameAxis(mfd="mfd", w2v_model=model_mf)
-        foundations_mf = ['authority.virtue', 'authority.vice',
-           'fairness.virtue', 'fairness.vice', 'general_morality.virtue',
-           'general_morality.vice', 'harm.virtue', 'harm.vice', 'ingroup.vice',
-           'ingroup.virtue', 'purity.vice', 'purity.virtue']
-
-    print("MF models loaded")
-
-    print("Frame Axis Models loaded")
+    # print("Running FrameAxis Moral Foundations scores")
+    # CON_Model_PATH = "word2vec-google-news-300"
+    # model_con = gensim.downloader.load(CON_Model_PATH)
+    # foundations_con = ['bias_concreteness','intensity_concreteness','concreteness.vice','concreteness.virtue']
+    # fa_con = FrameAxis(mfd="customized", w2v_model=model_con)
+    # if args.type_of_mf_model:
+    #     print("BERT Moral Foundation loading")
+    #     pass
+    # else:
+    #     print("FrameAxis Model loading")
+    #     MF_Model_PATH = "../component/Embedding_MF/w2v_aylien_huff.txt"
+    #     model_mf = KeyedVectors.load_word2vec_format(MF_Model_PATH, binary=False)
+    #     fa_mf = FrameAxis(mfd="mfd", w2v_model=model_mf)
+    #     foundations_mf = ['authority.virtue', 'authority.vice',
+    #        'fairness.virtue', 'fairness.vice', 'general_morality.virtue',
+    #        'general_morality.vice', 'harm.virtue', 'harm.vice', 'ingroup.vice',
+    #        'ingroup.virtue', 'purity.vice', 'purity.virtue']
+    #
+    # print("MF models loaded")
+    #
+    # print("Frame Axis Models loaded")
 
 # ---------------Loading models ends ends-----------------------------
 
     not_done_list = []
     data_pd = pd.read_csv(args.data,error_bad_lines=False)
     final_dict_result = data_pd[['id','Date','from','from_id']].to_dict('records')
-    TELEGRAM_GROUP_ID = args.telegram_group_id
+    TELEGRAM_GROUP_ID = 1189886378
     f = data_pd['text']
     linelist = [line.rstrip() for line in f]
     data = []
@@ -189,7 +192,7 @@ if __name__ == '__main__':
                 combined_result['sen_num'] = i_sen
                 combined_result['sentence'] = text
                 # Adding MF Scores !!
-                combined_result = MF_concreteness(combined_result, fa_mf, fa_con)
+                # combined_result = MF_concreteness(combined_result, fa_mf, fa_con)
                 print("after returning",combined_result)
                 # MF Scores ends !!
                 result_list_this_line.append(combined_result)

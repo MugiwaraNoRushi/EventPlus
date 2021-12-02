@@ -6,14 +6,12 @@ import argparse
 import json
 import re
 import nltk
-from class_event_loader import EventAPIs
 from nltk import tokenize
 import numpy as np
 from frameAxis import FrameAxis
 from gensim.models import KeyedVectors
 import gensim
 import gensim.downloader
-from test_on_raw_text import NumpyEncoder
 
 # functions
 
@@ -36,7 +34,7 @@ def deEmojify(text):
 def preprocess_text(tweets):
     '''remove hashtags and urls'''
     tweets = tweets.str.replace(r'(?:\@|https?\://)\S+', ' ', regex=True)
-    print(type(tweets))
+    # print(type(tweets))
     tweets = tweets.str.replace('\xa0', '')
     tweets = tweets.str.replace(r'[^\w\s]', ' ', regex=True)
     tweets = tweets.str.replace(r'[^a-zA-z\s]', ' ', regex=True)  # r'[^a-zA-z0-9\s]'
@@ -59,23 +57,28 @@ def MF_concreteness(combined_result, fa_con):
             combined_result['concreteness'] = con_scores[foundations_con].to_dict('records')[0]
         except:
             combined_result['concreteness'] = None
-    print("returning")
+    # print("returning")
     return combined_result
 
 if __name__ == "__main__":
     CON_Model_PATH = "word2vec-google-news-300"
     model_con = gensim.downloader.load(CON_Model_PATH)
     foundations_con = ['bias_concreteness','intensity_concreteness','concreteness.vice','concreteness.virtue']
+    fa_con = FrameAxis(mfd="customized", w2v_model=model_con)
     file_path = sys.argv[1]
-    data = json.load(file_path)
+    output_path = sys.argv[2]
+    data = json.load(open(file_path))
     result = data['result_list']
+    i = 0
     for obj in result:
         for text in obj['text_results']:
             text = MF_concreteness(text, fa_con)
+            i+= 1
+            if i %100:
+                print(text)
 
-    with open(file_path, 'w', encoding='utf-8') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         # Use NumpyEncoder to convert numpy data to list
         # Previous error: Object of type int64 is not JSON serializable
-        json.dump(data, f, indent=4, ensure_ascii=False,
-                    cls=NumpyEncoder)
+        json.dump(data, f, indent=4, ensure_ascii=False)
 #     print(obj)
